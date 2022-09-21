@@ -1,0 +1,20 @@
+.container{
+    justify-content: center;
+    text-align: center;
+    margin-top : 20px;
+}
+
+.field{
+    margin: auto;
+    display: grid;
+    width:30%;
+}
+
+.text-center{
+    text-align:center;
+    
+}
+
+.card button{
+    margin: 5px;
+}

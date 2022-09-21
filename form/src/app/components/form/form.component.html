@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="card">
+
+        <h1>Form Save</h1>
+        <form (ngSubmit)="doSubmitForm()">
+            <!-- {{data|json}} -->
+            <mat-form-field class="field" appearance="outline">
+                <mat-label>name</mat-label>
+                <input name="userName" [(ngModel)]="data.userName"  matInput>
+            </mat-form-field>
+
+
+            <mat-form-field class="field" appearance="outline">
+                <mat-label>email id</mat-label>
+                <input name="userEmail" [(ngModel)]="data.userEmail" matInput>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width field" appearance="outline">
+                <mat-label>User Password</mat-label>
+                <input name="userPassword" [(ngModel)]="data.userPassword" matInput>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width field" appearance="outline">
+                <mat-label>phone number</mat-label>
+                <input name="userPhone" [(ngModel)]="data.userPhone" matInput>
+            </mat-form-field>
+
+            <div class="text-center">
+
+                <mat-spinner class="text-center field "  *ngIf="!flag" ></mat-spinner>
+                <button [disabled]="!flag" type="submit" mat-raised-button color="primary">submit</button>
+                <button type="reset" mat-raised-button color="accent">reset</button>
+            </div>
+
+
+        </form>
+      
+
+    </div>
+</div>
